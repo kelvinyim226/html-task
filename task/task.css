@@ -13,7 +13,9 @@ body {
     margin: 0;
 }
 
-body, header, footer{
+body,
+header,
+footer {
     overflow-x: hidden;
     font-family: "Montserrat";
 
@@ -21,10 +23,10 @@ body, header, footer{
 
 
 button:focus {
-    outline: unset!important;
+    outline: unset !important;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
@@ -42,7 +44,7 @@ header {
 
 .navBar {
     justify-content: space-evenly;
-    background-color:#e30866;
+    background-color: #e30866;
     padding: .5rem;
 }
 
@@ -52,7 +54,7 @@ header {
     font-size: 12px;
 }
 
-.navBar-item:hover{
+.navBar-item:hover {
     background-color: #624764;
 }
 
@@ -61,61 +63,61 @@ header {
     background-color: #e30866;
     position: relative;
     display: none;
-  }
-  
-  .topnav #myLinks {
+}
+
+.topnav #myLinks {
     display: none;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     color: white;
     padding: 4px 10px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
-  
-  .topnav a.icon {
+}
+
+.topnav a.icon {
     background: #white;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
 
-  .topnav .active{
+.topnav .active {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
-  
-  
-  .topnav a:hover {
+}
+
+
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #e30866;
     color: white;
-  }
+}
 
-  .side-bar{
-      position: absolute;
-      right: 0;
-      padding-top: 50px;
-      top: 600px;
-  }
+.side-bar {
+    position: absolute;
+    right: 0;
+    padding-top: 50px;
+    top: 600px;
+}
 
-  .side-box{
-      padding: 20px;
-      background-color: lightgrey;
-      color: white;
-  }
+.side-box {
+    padding: 20px;
+    background-color: lightgrey;
+    color: white;
+}
 
-  .side-box:hover{
+.side-box:hover {
     background-color: #e30866;
 
 }
@@ -137,7 +139,7 @@ header {
     height: 10%;
 }
 
-.prev-btn::after{
+.prev-btn::after {
     content: '';
     border-bottom: 1px solid white;
     width: 50%;
@@ -146,11 +148,11 @@ header {
 
 }
 
-.carousel-height{
+.carousel-height {
     max-height: 470px;
 }
 
-.carosel-content{
+.carosel-content {
     position: absolute;
     z-index: 2;
     left: 10%;
@@ -164,51 +166,51 @@ header {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.services-card .overlay:hover{
-    background-color: rgba(227,8,102,0.9);
+.services-card .overlay:hover {
+    background-color: rgba(227, 8, 102, 0.9);
 }
 
-.latest-news .overlay:hover{
+.latest-news .overlay:hover {
     background-color: unset;
 }
 
-.latest-news .overlay:hover  ~ .news-text{
+.latest-news .overlay:hover~.news-text {
     display: none;
 }
 
 
-#carousel-page .carousel-indicators li.active{
+#carousel-page .carousel-indicators li.active {
     background-color: #e30866;
 }
 
-.section{
+.section {
     align-items: center;
     margin: 0rem 12rem;
     border-bottom: 1px solid lightgray;
     padding: 4rem;
-    
+
 }
 
-.section-title{
+.section-title {
     margin: 1rem;
-    color:#e30866;
+    color: #e30866;
     font-weight: 500;
 }
 
-.section-content{
+.section-content {
     line-height: 3rem;
     font-size: 12px;
     color: grey;
 }
 
-.brand-logo{
+.brand-logo {
     width: 120px;
 }
 
-.more-btn{
+.more-btn {
     font-size: 14px;
     color: #e30866;
     padding: 14px 30px;
@@ -220,31 +222,32 @@ header {
     background: white;
 }
 
-.more-btn:hover{
+.more-btn:hover {
     color: white;
     background: #e30866;
 
 }
 
-.service-section{
+.service-section {
     background-color: #f8f8f8;
 }
 
-.service-container{
+.service-container {
     margin: 0rem 12rem;
 }
 
-.service-image{
+.service-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
 
 }
-.services-card{
+
+.services-card {
     position: relative;
 }
 
-.service-logo{
+.service-logo {
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -257,23 +260,23 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    pointer-events:none;
+    pointer-events: none;
 
 }
 
-.news-logo{
+.news-logo {
     width: 100%;
     height: 240px;
     object-fit: cover;
 }
 
-.news-text{
+.news-text {
     position: absolute;
     left: 8%;
     bottom: 4px;
     z-index: 1;
     font-size: 16px;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 footer {
@@ -283,57 +286,62 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    .section, .service-container{
+
+    .section,
+    .service-container {
         margin: 0rem 4rem;
     }
-  }
+}
 
-  @media screen and (max-width: 767px) {
-    .tablet-column{
-        flex-direction: column!important;
+@media screen and (max-width: 767px) {
+    .tablet-column {
+        flex-direction: column !important;
     }
-    .header-title{
+
+    .header-title {
         font-size: 24px;
     }
-    .tablet-hidden{
-        display: none!important;
+
+    .tablet-hidden {
+        display: none !important;
     }
 
-    *{
+    * {
         font-size: 12px;
     }
 
-    .header-title{
+    .header-title {
         font-size: 20px;
     }
 
     .carosel-content {
         font-size: 16px;
     }
-  }
+}
 
-  @media screen and (max-width: 480px) {
-      .mobile-hidden{
-          display: none!important;
-      }
-
-      .mobile-hidden.navBar{
-        display: none!important;
+@media screen and (max-width: 480px) {
+    .mobile-hidden {
+        display: none !important;
     }
 
-      .header-title{
+    .mobile-hidden.navBar {
+        display: none !important;
+    }
+
+    .header-title {
         font-size: 16px;
     }
 
-    .section, .service-container {
+    .section,
+    .service-container {
         margin: unset;
     }
 
-    .mobile-column{
-        flex-direction: column!important;
+    .mobile-column {
+        flex-direction: column !important;
     }
 
-    .topnav{
-        display: block!important;
+    .topnav {
+        display: block !important;
     }
-  }
+}

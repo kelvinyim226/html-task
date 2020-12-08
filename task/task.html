@@ -1,262 +1,340 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="./task.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./task.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 
-<body>
-  <!-- Header -->
-  <header class="col-md-12 col-sm-12">
-    <img src="./img/headerLogo.png" alt="cityULogo" width="80" height="60" />
-    <div>
-      <div class="header-title">
-        Communication and Publication Relations Office
-      </div>
-    </div>
-  </header>
-
-  <!-- Navbar (sit on top) -->
-  <div class="mobile-hidden col-md-12 col-sm-12 navBar text-white d-flex flex-row p-0">
-    <a class="navBar-item p-2">Home</a>
-    <a class="navBar-item p-2">About CPRO</a>
-    <a class="navBar-item p-2">Branding</a>
-    <a class="navBar-item p-2">University Communication</a>
-    <a class="navBar-item p-2">Outreach</a>
-    <a class="navBar-item p-2">Media</a>
-    <a class="navBar-item p-2">contact</a>
-  </div>
-
-  <!--mobile nav-->
-  <div class="topnav">
-    <div class="active"></div>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks" class="active">
-      <a href="#news">Home</a>
-      <a href="#contact">About CPRO</a>
-      <a href="#about">University Communication</a>
-      <a href="#about">Outreach</a>
-      <a href="#about">Media</a>
-      <a href="#about">contact</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
-  <div id="carousel-page" class="carousel slide" data-ride="carousel">
-    <div class="overlay"></div>
-    <div class="carosel-content text-white mobile-hidden">
-      CityU continues to surge <br />
-      in world's rankings
-    </div>
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-page" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-page" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner carousel-height">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="./img/cityu-building.jpg" alt="First slide" />
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./img/cutiu-pic.jpg" alt="Second slide" />
-      </div>
-    </div>
-    <a class="carousel-control-prev prev-btn tablet-hidden" href="#carousel-page" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next next-btn tablet-hidden" href="#carousel-page" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <!-- Page content -->
-  <div class="col-md-12 flex-column justify-content-center p-0">
-    <div class="section d-flex flex-column">
-      <div class="section-title">About CPRO</div>
-      <div class="section-content text-center">
-        The Communications and Public Relations Office (CPRO) is the
-        multi-channel communications team at City University of Hong Kong.
-        CPRO builds upon CityU's strengths to enhance the University's
-        outreach and image-building efforts. A key objective of CPRO is to
-        help the University meet new challenges by building trust and
-        understanding among the University community and the public.
-      </div>
-    </div>
-
-    <div class="section d-flex flex-column" style="border: unset;">
-      <div class="section-title">About CityU Brand</div>
-      <div class="d-flex tablet-column">
-        <div class="section-card col-md-4 col-sm-12 text-center"><img class="brand-logo" src="./img/logo1.png">
-          <div class="section-title">Brand Pillars</div>
-          <div class="section-content text-center">
-            The CityU brand helps communicate the message that CityU is a leading university on the world stage.
-          </div>
-        </div>
-        <div class="section-card col-md-4 col-sm-12 text-center"><img class="brand-logo" src="./img/logo3.png">
-          <div class="section-title">Brand Personality</div>
-          <div class="section-content text-center">
-            The CityU Brand showcases the university as a dynamic, innovative, bold, and smart brand with global
-            ambitions.
-          </div>
-        </div>
-        <div class="section-card col-md-4 col-sm-12 text-center"><img class="brand-logo" src="./img/logo2.png">
-          <div class="section-title">Brand Position</div>
-          <div class="section-content text-center">
-            The CityU brand helps to reinforce CityU’s positioning in the global academic as one of the leading global
-            universities.
-          </div>
+  <body>
+    <!-- Header -->
+    <header class="col-md-12 col-sm-12">
+      <img src="./img/headerLogo.png" alt="cityULogo" width="80" height="60" />
+      <div>
+        <div class="header-title">
+          Communication and Publication Relations Office
         </div>
       </div>
-      <button class="more-btn">Learn More</button>
+    </header>
+
+    <!-- Navbar (sit on top) -->
+    <div
+      class="mobile-hidden col-md-12 col-sm-12 navBar text-white d-flex flex-row p-0"
+    >
+      <a class="navBar-item p-2">Home</a>
+      <a class="navBar-item p-2">About CPRO</a>
+      <a class="navBar-item p-2">Branding</a>
+      <a class="navBar-item p-2">University Communication</a>
+      <a class="navBar-item p-2">Outreach</a>
+      <a class="navBar-item p-2">Media</a>
+      <a class="navBar-item p-2">contact</a>
     </div>
 
-    <div class="section d-flex flex-column service-section m-0" style="border: unset;">
-      <div class="text-center service-container">
-        <div class="section-title">Services</div>
+    <!--mobile nav-->
+    <div class="topnav">
+      <div class="active"></div>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks" class="active">
+        <a href="#news">Home</a>
+        <a href="#contact">About CPRO</a>
+        <a href="#about">University Communication</a>
+        <a href="#about">Outreach</a>
+        <a href="#about">Media</a>
+        <a href="#about">contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="carousel-page" class="carousel slide" data-ride="carousel">
+      <div class="overlay"></div>
+      <div class="carosel-content text-white mobile-hidden">
+        CityU continues to surge <br />
+        in world's rankings
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-page" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-page" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner carousel-height">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="./img/cityu-building.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./img/cutiu-pic.jpg"
+            alt="Second slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev prev-btn tablet-hidden"
+        href="#carousel-page"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next next-btn tablet-hidden"
+        href="#carousel-page"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="col-md-12 flex-column justify-content-center p-0">
+      <div class="section d-flex flex-column">
+        <div class="section-title">About CPRO</div>
         <div class="section-content text-center">
-          Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          Aenean lacina bibendum nulla sed consectetur.
+          The Communications and Public Relations Office (CPRO) is the
+          multi-channel communications team at City University of Hong Kong.
+          CPRO builds upon CityU's strengths to enhance the University's
+          outreach and image-building efforts. A key objective of CPRO is to
+          help the University meet new challenges by building trust and
+          understanding among the University community and the public.
         </div>
-        <div class="tilts-container">
-          <div class="d-flex tablet-column col-md-12">
-            <div class="col-md-4 col-sm-12 p-0 m-1 services-card" data-tilt data-tilt-max="50" data-tilt-speed="400"
-              data-tilt-perspective="500">
-              <div class="overlay"></div>
-              <div class="service-logo js-tilt"><img src="./img/imageLogo1.png" width="50px">
-                <p class="text-white mt-3">CORPORATE VIDEOS</p>
-              </div>
-              <img class="service-image" src="./img/image2.jpeg">
-            </div>
-            <div class="col-md-8 col-sm-12 p-0 m-1 services-card" data-tilt data-tilt-max="50" data-tilt-speed="400"
-              data-tilt-perspective="500">
-              <div class="overlay"></div>
-              <div class="service-logo js-tilt"><img src="./img/imageLogo2.png" width="50px">
-                <p class="text-white mt-3">EVENT PROMOTIONS</p>
-              </div>
+      </div>
 
-              <img class="service-image" src="./img/image3.jpg">
+      <div class="section d-flex flex-column" style="border: unset">
+        <div class="section-title">About CityU Brand</div>
+        <div class="d-flex tablet-column">
+          <div class="section-card col-md-4 col-sm-12 text-center">
+            <img class="brand-logo" src="./img/logo1.png" />
+            <div class="section-title">Brand Pillars</div>
+            <div class="section-content text-center">
+              The CityU brand helps communicate the message that CityU is a
+              leading university on the world stage.
             </div>
+          </div>
+          <div class="section-card col-md-4 col-sm-12 text-center">
+            <img class="brand-logo" src="./img/logo3.png" />
+            <div class="section-title">Brand Personality</div>
+            <div class="section-content text-center">
+              The CityU Brand showcases the university as a dynamic, innovative,
+              bold, and smart brand with global ambitions.
+            </div>
+          </div>
+          <div class="section-card col-md-4 col-sm-12 text-center">
+            <img class="brand-logo" src="./img/logo2.png" />
+            <div class="section-title">Brand Position</div>
+            <div class="section-content text-center">
+              The CityU brand helps to reinforce CityU’s positioning in the
+              global academic as one of the leading global universities.
+            </div>
+          </div>
+        </div>
+        <button class="more-btn">Learn More</button>
+      </div>
+
+      <div
+        class="section d-flex flex-column service-section m-0"
+        style="border: unset"
+      >
+        <div class="text-center service-container">
+          <div class="section-title">Services</div>
+          <div class="section-content text-center">
+            Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam id
+            dolor id nibh ultricies vehicula ut id elit. Aenean lacina bibendum
+            nulla sed consectetur.
           </div>
           <div class="tilts-container">
             <div class="d-flex tablet-column col-md-12">
-              <div class="col-md-8 col-sm-12 p-0 m-1 services-card" data-tilt data-tilt-max="50" data-tilt-speed="400"
-                data-tilt-perspective="500">
+              <div
+                class="col-md-4 col-sm-12 p-0 m-1 services-card"
+                data-tilt
+                data-tilt-max="50"
+                data-tilt-speed="400"
+                data-tilt-perspective="500"
+              >
                 <div class="overlay"></div>
-                <div class="service-logo js-tilt"><img src="./img/imageLogo3.png" width="50px">
-                  <p class="text-white mt-3">CITYU SOUVENIRS</p>
+                <div class="service-logo js-tilt">
+                  <img src="./img/imageLogo1.png" width="50px" />
+                  <p class="text-white mt-3">CORPORATE VIDEOS</p>
                 </div>
-                <img class="service-image" src="./img/image4.jpeg">
+                <img class="service-image" src="./img/image2.jpeg" />
               </div>
-              <div class="col-md-4 col-sm-12  p-0 m-1 services-card" data-tilt data-tilt-max="50" data-tilt-speed="400"
-                data-tilt-perspective="500">
+              <div
+                class="col-md-8 col-sm-12 p-0 m-1 services-card"
+                data-tilt
+                data-tilt-max="50"
+                data-tilt-speed="400"
+                data-tilt-perspective="500"
+              >
                 <div class="overlay"></div>
-                <div class="service-logo js-tilt"><img src="./img/imageLogo4.png" width="50px">
-                  <p class="text-white mt-3">PHOTOGRAPHY SERVICES</p>
+                <div class="service-logo js-tilt">
+                  <img src="./img/imageLogo2.png" width="50px" />
+                  <p class="text-white mt-3">EVENT PROMOTIONS</p>
                 </div>
 
-                <img class="service-image" src="./img/images.jpeg">
+                <img class="service-image" src="./img/image3.jpg" />
+              </div>
+            </div>
+            <div class="tilts-container">
+              <div class="d-flex tablet-column col-md-12">
+                <div
+                  class="col-md-8 col-sm-12 p-0 m-1 services-card"
+                  data-tilt
+                  data-tilt-max="50"
+                  data-tilt-speed="400"
+                  data-tilt-perspective="500"
+                >
+                  <div class="overlay"></div>
+                  <div class="service-logo js-tilt">
+                    <img src="./img/imageLogo3.png" width="50px" />
+                    <p class="text-white mt-3">CITYU SOUVENIRS</p>
+                  </div>
+                  <img class="service-image" src="./img/image4.jpeg" />
+                </div>
+                <div
+                  class="col-md-4 col-sm-12 p-0 m-1 services-card"
+                  data-tilt
+                  data-tilt-max="50"
+                  data-tilt-speed="400"
+                  data-tilt-perspective="500"
+                >
+                  <div class="overlay"></div>
+                  <div class="service-logo js-tilt">
+                    <img src="./img/imageLogo4.png" width="50px" />
+                    <p class="text-white mt-3">PHOTOGRAPHY SERVICES</p>
+                  </div>
+
+                  <img class="service-image" src="./img/images.jpeg" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-    </div>
-    <div class="section d-flex flex-column m-0 latest-news">
-      <div class="section-title">Latest News</div>
-      <div class="section-content text-center">
-        Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-        Aenean lacina bibendum nulla sed consectetur.
-      </div>
-      <div class="tablet-column d-flex col-md-12">
-        <div class="col-md-4 col-sm-12 p-0 m-2">
-          <div class="overlay"></div>
-          <p class="news-text text-white">Ipsum Condimentum Inceptos <br> Nullam Mollis <br><br> 03 April 2017</p>
-          <img class="news-logo" src="./img/news1.jpg">
+      <div class="section d-flex flex-column m-0 latest-news">
+        <div class="section-title">Latest News</div>
+        <div class="section-content text-center">
+          Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam id dolor
+          id nibh ultricies vehicula ut id elit. Aenean lacina bibendum nulla
+          sed consectetur.
         </div>
-        <div class="col-md-4 col-sm-12 p-0 m-2">
-          <div class="overlay"></div>
-          <p class="news-text text-white">Ipsum Condimentum Inceptos <br> Nullam Mollis <br><br> 03 April 2017</p>
-          <img class="news-logo" src="./img/news2.jpg">
+        <div class="tablet-column d-flex col-md-12">
+          <div class="col-md-4 col-sm-12 p-0 m-2">
+            <div class="overlay"></div>
+            <p class="news-text text-white">
+              Ipsum Condimentum Inceptos <br />
+              Nullam Mollis <br /><br />
+              03 April 2017
+            </p>
+            <img class="news-logo" src="./img/news1.jpg" />
+          </div>
+          <div class="col-md-4 col-sm-12 p-0 m-2">
+            <div class="overlay"></div>
+            <p class="news-text text-white">
+              Ipsum Condimentum Inceptos <br />
+              Nullam Mollis <br /><br />
+              03 April 2017
+            </p>
+            <img class="news-logo" src="./img/news2.jpg" />
+          </div>
+          <div class="col-md-4 col-sm-12 p-0 m-2">
+            <div class="overlay"></div>
+            <p class="news-text text-white">
+              Ipsum Condimentum Inceptos <br />
+              Nullam Mollis <br /><br />
+              03 April 2017
+            </p>
+            <img class="news-logo" src="./img/news3.png" />
+          </div>
         </div>
-        <div class="col-md-4 col-sm-12 p-0 m-2">
-          <div class="overlay"></div>
-          <p class="news-text text-white">Ipsum Condimentum Inceptos <br> Nullam Mollis <br><br> 03 April 2017</p>
-          <img class="news-logo" src="./img/news3.png">
+      </div>
+
+      <!-- End page content -->
+    </div>
+    <div class="side-bar mobile-hidden" data-margin-top="250">
+      <div class="side-box"><i class="fa fa-print" aria-hidden="true"></i></div>
+      <div class="side-box">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </div>
+      <div class="side-box"><i class="fa fa-phone" aria-hidden="true"></i></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="col-md-12 col-sm-12">
+      <div class="d-flex tablet-column p-5">
+        <div class="col-md-8">
+          <div class="col-md-12 mobile-column d-flex text-center">
+            <a class="col-xs-12 col-md-2 m-1">Privacy Policy</a>
+            <a class="col-xs-12 col-md-2 m-1">Copy Right</a>
+            <a class="col-xs-12 col-md-2 m-1">Disclaimer</a>
+            <a class="col-xs-12 col-md-2 m-1">Contact Us</a>
+            <a class="col-xs-12 col-md-2 m-1">Download PDF Reader</a>
+          </div>
+          <div class="col-md-12 ml-3">
+            <div>2017 City University of Hong Kong All Right Reserverd</div>
+          </div>
+        </div>
+        <div class="col-md-4 text-right">
+          <img src="./img/cityu-logo-footer.png">
         </div>
       </div>
-
-    </div>
-
-
-    <!-- End page content -->
-  </div>
-  <div class="side-bar mobile-hidden" data-margin-top="250">
-    <div class="side-box"><i class="fa fa-print" aria-hidden="true"></i>
-    </div>
-    <div class="side-box"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-    </div>
-    <div class="side-box"><i class="fa fa-phone" aria-hidden="true"></i>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="col-md-12 col-sm-12">
-    <div class="d-flex tablet-column p-5">
-      <div class="col-md-8">
-        <div class="col-md-12 mobile-column d-flex text-center">
-        <a class="col-xs-12 col-md-2 m-1">Privacy Policy</a>
-        <a class="col-xs-12 col-md-2 m-1">Copy Right</a>
-        <a class="col-xs-12 col-md-2 m-1">Disclaimer</a>
-        <a class="col-xs-12 col-md-2 m-1">Contact Us</a>
-        <a class="col-xs-12 col-md-2 m-1">Download PDF Reader</a>
-      </div>
-      <div class="col-md-12 ml-3">
-        <div>2017 City University of Hong Kong All Right Reserverd</div>
-      </div>
-      </div>
-      <div class="col-md-4 text-right"><img src="./img/cityu-logo-footer.png"</div>
-    </div>
-
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js" integrity="sha512-3z3zGiu0PabNyuTAAfznBJFpOg4owG9oQQasE5BwiiH5BBwrAjbfgIe0RCdtHJ0BQV1YF2Shgokbz2NziLnkuQ==" crossorigin="anonymous"></script></body>
-
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js"
+      integrity="sha512-3z3zGiu0PabNyuTAAfznBJFpOg4owG9oQQasE5BwiiH5BBwrAjbfgIe0RCdtHJ0BQV1YF2Shgokbz2NziLnkuQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
 
 <script>
   $(document).ready(function () {
     $(".carousel").carousel();
-
-var sticky = new Sticky('.side-bar');
-
-    
+    var sticky = new Sticky(".side-bar");
   });
 
   function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-}
-
-
 </script>
